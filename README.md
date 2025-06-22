@@ -1,25 +1,88 @@
 # iris-flower
+# 🌸 Iris Flower Classification
+
+This project uses machine learning to classify iris flowers into three species — Setosa, Versicolour, and Virginica — based on features such as sepal and petal length and width. It demonstrates a full ML workflow including data visualization, preprocessing, model training, and evaluation.
+
+---
+
+## 📁 Dataset
+
+- **Source**: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris)
+- **Size**: 150 samples (50 samples per species)
+- **Features**:
+  - Sepal Length (cm)
+  - Sepal Width (cm)
+  - Petal Length (cm)
+  - Petal Width (cm)
+
+---
+
+## 🧠 ML Workflow
+
+1. **Import and load the dataset**
+2. **Exploratory Data Analysis (EDA)** using:
+   - Pairplots
+   - Boxplots & Violin plots
+   - Heatmaps & Correlation analysis
+3. **Data preprocessing**:
+   - Label encoding
+   - Feature scaling with `StandardScaler`
+4. **Train-test split** with stratification
+5. **Model training**:
+   - K-Nearest Neighbors (KNN)
+   - Logistic Regression
+   - Support Vector Machine (SVM)
+6. **Evaluation** using:
+   - Accuracy
+   - Classification report (precision, recall, F1)
+   - Confusion matrix
+
+---
+
+## 📊 Results
+
+All three models achieved **100% accuracy** on the test data, confirming the simplicity and separability of the Iris dataset.
+
+| Model                  |Accuracy|
+|------------------------|--------|
+| K-Nearest Neighbors    |  1.00  |
+| Logistic Regression    |  1.00  |
+| Support Vector Machine |  1.00  |
+
+---
+
 ## 📌 Conclusion
 
-In this project, I built a supervised machine learning model to classify iris flowers into three species — Setosa, Versicolour, and Virginica — using features such as sepal length/width and petal length/width.
+This project highlights how classical ML models can achieve perfect accuracy on well-structured, linearly separable datasets like Iris. Petal length and width were the most informative features. The results emphasize the importance of EDA and model evaluation in building reliable classifiers.
 
-The dataset was clean and balanced, making it ideal for exploratory analysis. Through visualizations like pairplots, heatmaps, violin plots, and scatter plots, I observed that **petal length and petal width** were highly discriminative features, especially in separating Setosa from the other two species.
+---
 
-Three classification algorithms were applied:
-- **K-Nearest Neighbors**
-- **Logistic Regression**
-- **Support Vector Machine (Linear Kernel)**
+## 🔧 Tech Stack
 
-All three models achieved **100% accuracy** on the test set, which reflects the separability of the classes and effectiveness of the features. Confusion matrices and classification reports confirmed perfect precision, recall, and F1-scores across all classes.
+- Python (Jupyter Notebook)
+- Libraries: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`
 
-### 🔍 Key Takeaways:
-- The Iris dataset is an excellent example of how simple models can perform remarkably well when the data is well-structured and features are informative.
-- Petal dimensions are the most important features for classification.
-- All three models performed equally well, but SVM is often preferred for high-dimensional and real-world cases.
+---
 
-### 🚀 Future Improvements:
-- Try non-linear kernels with SVM (like RBF)
-- Apply cross-validation and GridSearch for hyperparameter tuning
-- Deploy the model using Flask or Streamlit for web interaction
+## 📁 Project Structure
+Iris-Flower-Classification/
+├── README.md                  
+├── iris.csv                   
+├── iris_flower.ipynb         
 
-This project gave me hands-on experience with the entire ML pipeline — from data exploration and preprocessing to modeling and evaluation — making it a valuable part of my data science journey.
+---
+
+## 👩‍💻 Author
+
+**Sneha Jha** 
+BCA (Data Science), 5th Semester  
+Aspiring Data Scientist
+
+---
+
+## 📝 License
+
+This project is licensed under the [MIT License](./LICENSE).
+
+
+
